@@ -14,7 +14,8 @@ function Error_404() {
             back soon.
           </p>
           <div className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} 365events. All rights reserved.
+            &copy; {new Date().getFullYear()} galgaloimports. All rights
+            reserved.
           </div>
         </div>
       </div>{" "}
