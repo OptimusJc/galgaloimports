@@ -1,10 +1,10 @@
 "use client";
 
-import Button from "./Button";
+import { Button } from "@/components/ui/button";
+import { useMediaQuery } from "@/hooks/use-media-query";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { KeyboardArrowDown } from "relume-icons";
-import { useMediaQuery } from "@relume_io/relume-ui";
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,7 +44,7 @@ export function Navbar1() {
     <section className="z-[999] flex w-full items-center border-b border-scheme-border bg-scheme-background lg:min-h-18 lg:px-[5%]">
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-          <a href="/">
+          <a href="#">
             <img
               src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
               alt="Logo image"
@@ -55,7 +55,7 @@ export function Navbar1() {
             onClick={useActive.toggleMobileMenu}
           >
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-gray-800"
+              className="my-[3px] h-0.5 w-6 bg-neutral-darkest"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: 8, transition: { delay: 0.1 } },
@@ -68,7 +68,7 @@ export function Navbar1() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-gray-800"
+              className="my-[3px] h-0.5 w-6 bg-neutral-darkest"
               animate={useActive.animateMobileMenu}
               variants={{
                 open: { width: 0, transition: { duration: 0.1 } },
@@ -79,7 +79,7 @@ export function Navbar1() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-gray-800"
+              className="my-[3px] h-0.5 w-6 bg-neutral-darkest"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: -8, transition: { delay: 0.1 } },
@@ -89,7 +89,7 @@ export function Navbar1() {
                   rotate: 0,
                   transition: { duration: 0.2 },
                 },
-              }}jj
+              }}
             />
           </button>
         </div>
@@ -102,24 +102,23 @@ export function Navbar1() {
           exit="close"
           animate={useActive.animateMobileMenu}
           transition={{ duration: 0.4 }}
-          className="overflow-hidden px-[5%] flex lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+          className="overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
           <a
-            href="/"
-            className="px-6 py-3 text-gray-900 font-medium bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+            href="#"
+            className="text-regular block py-3 first:pt-7 lg:px-4 lg:py-2 first:lg:pt-2"
           >
             Home
           </a>
-
           <a
-            href="/product-overview"
-            className="px-6 py-3 text-gray-900 font-medium bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+            href="#"
+            className="text-regular block py-3 first:pt-7 lg:px-4 lg:py-2 first:lg:pt-2"
           >
             Products
           </a>
           <a
-            href="/about-us"
-            className="px-6 py-3 text-gray-900 font-medium bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+            href="#"
+            className="text-regular block py-3 first:pt-7 lg:px-4 lg:py-2 first:lg:pt-2"
           >
             About Us
           </a>
@@ -127,9 +126,8 @@ export function Navbar1() {
             onMouseEnter={useActive.openOnDesktopDropdownMenu}
             onMouseLeave={useActive.closeOnDesktopDropdownMenu}
           >
-            {/* className="text-regular flex w-full items-center justify-between gap-2 py-3 text-left lg:flex-none lg:justify-start lg:px-4 lg:py-2" */}
             <button
-              className="px-6 py-3 text-gray-900 font-medium flex w-full items-center justify-between gap-2 text-left lg:flex-none lg:justify-start lg:px-4 lg:py-2 bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+              className="text-regular flex w-full items-center justify-between gap-2 py-3 text-left lg:flex-none lg:justify-start lg:px-4 lg:py-2"
               onClick={useActive.openOnMobileDropdownMenu}
             >
               <span>Services</span>
@@ -164,22 +162,22 @@ export function Navbar1() {
                 className="bg-scheme-background lg:absolute lg:z-50 lg:border lg:border-scheme-border lg:p-2 lg:[--y-close:25%]"
               >
                 <a
-                  href="/contact-us"
+                  href="#"
                   className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
                 >
                   Contact Us
                 </a>
                 <a
-                  href="/import-process"
-                  className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
-                >
-                  Import Process
-                </a>
-                <a
-                  href="/faq"
+                  href="#"
                   className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
                 >
                   FAQ
+                </a>
+                <a
+                  href="#"
+                  className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
+                >
+                  Blog
                 </a>
               </motion.nav>
             </AnimatePresence>
@@ -187,13 +185,13 @@ export function Navbar1() {
           <div className="mt-6 flex flex-col items-center gap-4 lg:mt-0 lg:ml-4 lg:flex-row">
             <Button
               title="Quote"
-              size="small"
-              variant="primary"
+              variant="secondary"
+              size="sm"
               className="w-full"
             >
               Quote
             </Button>
-            <Button title="Inquire" size="small" className="w-full">
+            <Button title="Inquire" size="sm" className="w-full">
               Inquire
             </Button>
           </div>
