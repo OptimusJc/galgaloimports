@@ -56,7 +56,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       "link-alt":
         "bg-transparent text-blue-600 hover:text-blue-800 underline underline-offset-4 focus:ring-blue-500 border-none p-0",
     };
-
+    // px-6 py-3 text-gray-900 font-medium border-2 border-gray-300 transition-all duration-500 hover:border-pink-500 hover:scale-110 hover:rotate-3 hover:text-pink-600
     // Size styles
     const sizes: Record<string, string> = {
       small: "px-3 py-1.5 text-sm rounded-md gap-1.5",
