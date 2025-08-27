@@ -59,9 +59,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     // px-6 py-3 text-gray-900 font-medium border-2 border-gray-300 transition-all duration-500 hover:border-pink-500 hover:scale-110 hover:rotate-3 hover:text-pink-600
     // Size styles
     const sizes: Record<string, string> = {
-      small: "px-3 py-1.5 text-sm rounded-md gap-1.5",
-      medium: "px-4 py-2 text-base rounded-md gap-2",
-      large: "px-6 py-3 text-lg rounded-lg gap-2.5",
+      small: "px-3 py-1.5 text-sm rounded-full gap-1.5",
+      medium: "px-4 py-2 text-base rounded-full gap-2",
+      large: "px-6 py-3 text-lg rounded-full gap-2.5",
     };
 
     // Special handling for link variants
