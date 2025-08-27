@@ -41,13 +41,14 @@ const useRelume = () => {
 export function Navbar1() {
   const useActive = useRelume();
   return (
-    <section className="z-[999] flex w-full items-center border-b border-scheme-border bg-scheme-background lg:min-h-18 lg:px-[5%]">
+    <section className="z-[999] flex w-full items-center border-b border-scheme-border bg-primary lg:min-h-18 lg:px-[5%]">
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
           <a href="/">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src="/logo.png"
               alt="Logo image"
+              className="w-20 md:w-24 my-2"
             />
           </a>
           <button
@@ -55,7 +56,7 @@ export function Navbar1() {
             onClick={useActive.toggleMobileMenu}
           >
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-gray-800"
+              className="my-[3px] h-0.5 w-6 bg-gray-100"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: 8, transition: { delay: 0.1 } },
@@ -68,7 +69,7 @@ export function Navbar1() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-gray-800"
+              className="my-[3px] h-0.5 w-6 bg-gray-100"
               animate={useActive.animateMobileMenu}
               variants={{
                 open: { width: 0, transition: { duration: 0.1 } },
@@ -79,7 +80,7 @@ export function Navbar1() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-gray-800"
+              className="my-[3px] h-0.5 w-6 bg-gray-100"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: -8, transition: { delay: 0.1 } },
@@ -89,7 +90,7 @@ export function Navbar1() {
                   rotate: 0,
                   transition: { duration: 0.2 },
                 },
-              }}jj
+              }}
             />
           </button>
         </div>
@@ -102,24 +103,24 @@ export function Navbar1() {
           exit="close"
           animate={useActive.animateMobileMenu}
           transition={{ duration: 0.4 }}
-          className="overflow-hidden px-[5%] flex lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+          className="overflow-hidden px-[5%] flex flex-col lg:flex-row lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
           <a
             href="/"
-            className="px-6 py-3 text-gray-900 font-medium bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+            className="px-6 py-3 text-gray-100 font-medium transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
           >
             Home
           </a>
 
           <a
             href="/product-overview"
-            className="px-6 py-3 text-gray-900 font-medium bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+            className="px-6 py-3 text-gray-100 font-medium transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
           >
             Products
           </a>
           <a
             href="/about-us"
-            className="px-6 py-3 text-gray-900 font-medium bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+            className="px-6 py-3 text-gray-100 font-medium transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
           >
             About Us
           </a>
@@ -127,9 +128,8 @@ export function Navbar1() {
             onMouseEnter={useActive.openOnDesktopDropdownMenu}
             onMouseLeave={useActive.closeOnDesktopDropdownMenu}
           >
-            {/* className="text-regular flex w-full items-center justify-between gap-2 py-3 text-left lg:flex-none lg:justify-start lg:px-4 lg:py-2" */}
             <button
-              className="px-6 py-3 text-gray-900 font-medium flex w-full items-center justify-between gap-2 text-left lg:flex-none lg:justify-start lg:px-4 lg:py-2 bg-white transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-blue-600"
+              className="px-6 py-3 text-gray-100 font-medium flex w-full items-center justify-between gap-2 text-left lg:flex-none lg:justify-start lg:px-4 lg:py-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
               onClick={useActive.openOnMobileDropdownMenu}
             >
               <span>Services</span>
@@ -147,7 +147,7 @@ export function Navbar1() {
                   open: {
                     visibility: "visible",
                     opacity: "var(--opacity-open, 100%)",
-                    display: "block",
+                    display: "flex",
                     y: 0,
                   },
                   close: {
@@ -161,23 +161,23 @@ export function Navbar1() {
                 initial="close"
                 exit="close"
                 transition={{ duration: 0.2 }}
-                className="bg-scheme-background lg:absolute lg:z-50 lg:border lg:border-scheme-border lg:p-2 lg:[--y-close:25%]"
+                className="bg-scheme-background bg-primary flex-col lg:absolute lg:z-50 lg:border lg:border-scheme-border lg:p-2 lg:[--y-close:25%]"
               >
                 <a
                   href="/contact-us"
-                  className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
+                  className="pl-[10%] lg:px-4 py-2 font-medium text-base text-gray-100 transition-all duration-300 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(199,0,57,0.8)]"
                 >
                   Contact Us
                 </a>
                 <a
                   href="/import-process"
-                  className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
+                  className="pl-[10%] lg:px-4 py-2 font-medium text-base text-gray-100 transition-all duration-300 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(199,0,57,0.8)]"
                 >
                   Import Process
                 </a>
                 <a
                   href="/faq"
-                  className="text-regular block py-3 pl-[5%] lg:px-4 lg:py-2"
+                  className="pl-[10%] lg:px-4 py-2 font-medium text-base text-gray-100 transition-all duration-300 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(199,0,57,0.8)]"
                 >
                   FAQ
                 </a>
@@ -188,12 +188,17 @@ export function Navbar1() {
             <Button
               title="Quote"
               size="small"
-              variant="primary"
-              className="w-full"
+              variant="tertiary"
+              className="w-full py-3 md:py-2 text-gray-100 hover:text-secondary"
             >
               Quote
             </Button>
-            <Button title="Inquire" size="small" className="w-full">
+            <Button
+              title="Inquire"
+              size="small"
+              variant="secondary"
+              className="w-full py-3 md:py-2 hover:bg-secondary"
+            >
               Inquire
             </Button>
           </div>
