@@ -2,17 +2,21 @@
 
 import Button from "@/components/Button";
 import { FaChevronRight } from "react-icons/fa";
-import { BsFillBoxFill } from "react-icons/bs";
+import {
+  MdOutlineAutoStories,
+  MdOutlineHighQuality,
+  MdOutlinePrecisionManufacturing,
+} from "react-icons/md";
 
 export function Layout241() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+    <section className="bg-primary text-white px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container mx-auto">
         <div className="flex flex-col">
           <div className="mb-12 md:mb-18 lg:mb-20">
-            <div className="w-full max-w-lg">
+            <div className="w-full max-w-2xl">
               <p className="mb-3 font-semibold md:mb-4">Parts</p>
-              <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl mb-5 font-bold md:mb-6">
                 Explore Our Top Quality Auto Parts
               </h2>
               <p className="text-medium">
@@ -25,7 +29,7 @@ export function Layout241() {
           <div className="grid grid-cols-1 items-start justify-center gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
             <div className="flex w-full flex-col">
               <div className="mb-5 md:mb-6">
-                <BsFillBoxFill className="size-12 text-scheme-text" />
+                <MdOutlineAutoStories className="size-12 text-scheme-text" />
               </div>
               <h3 className="heading-h4 mb-5 font-bold md:mb-6">
                 Engines for Every Type of Vehicle
@@ -37,7 +41,7 @@ export function Layout241() {
             </div>
             <div className="flex w-full flex-col">
               <div className="mb-5 md:mb-6">
-                <BsFillBoxFill className="size-12 text-scheme-text" />
+                <MdOutlinePrecisionManufacturing className="size-12 text-scheme-text" />
               </div>
               <h3 className="heading-h4 mb-5 font-bold md:mb-6">
                 Precision Vehicle Nose Cuts & Body Cuts
@@ -46,7 +50,7 @@ export function Layout241() {
             </div>
             <div className="flex w-full flex-col">
               <div className="mb-5 md:mb-6">
-                <BsFillBoxFill className="size-12 text-scheme-text" />
+                <MdOutlineHighQuality className="size-12 text-scheme-text" />
               </div>
               <h3 className="heading-h4 mb-5 font-bold md:mb-6">
                 Reliable Steering Racks for Smooth Handling
@@ -58,11 +62,19 @@ export function Layout241() {
             </div>
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-            <Button variant="secondary">Inquire</Button>
             <Button
+              to="/contact-us"
+              variant="secondary-alt"
+              className="hover:text-secondary hover:outline-2 hover:outline-secondary"
+            >
+              Inquire
+            </Button>
+            <Button
+              to="/about-us"
               rightIcon={<FaChevronRight className="text-scheme-text" />}
               variant="link"
               size="small"
+              className="text-white hover:text-secondary"
             >
               Explore
             </Button>
