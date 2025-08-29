@@ -17,14 +17,11 @@ export function Header5() {
               involved.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button variant="primary" to="/about-us">
-                Request Us
+              <Button variant="secondary" to="/about-us" className="">
+                Request
               </Button>
-              <Button variant="secondary-alt" to="/inquiries">
+              <Button variant="secondary-alt" to="/contact-us">
                 Inquire
-              </Button>
-              <Button variant="link" size="small">
-                <a href="https://google.com">Link Button</a>
               </Button>
             </div>
           </div>
