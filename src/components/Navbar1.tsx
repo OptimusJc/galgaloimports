@@ -186,7 +186,7 @@ export function Navbar1() {
           </div>
           <div className="mt-6 flex flex-col items-center gap-4 lg:mt-0 lg:ml-4 lg:flex-row">
             <Button
-              title="Quote"
+              to="/contact-us"
               size="small"
               variant="tertiary"
               className="w-full py-3 md:py-2 text-gray-100 hover:text-secondary"
@@ -194,7 +194,7 @@ export function Navbar1() {
               Quote
             </Button>
             <Button
-              title="Inquire"
+              to="/contact-us"
               size="small"
               variant="secondary"
               className="w-full py-3 md:py-2 hover:bg-secondary"
