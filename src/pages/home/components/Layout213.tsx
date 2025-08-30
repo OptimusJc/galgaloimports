@@ -2,7 +2,7 @@
 
 import Button from "@/components/Button";
 import { FaChevronRight } from "react-icons/fa";
-import { BsFillBoxFill } from "react-icons/bs";
+import { MdOutlineHighQuality } from "react-icons/md";
 
 export function Layout213() {
   return (
@@ -18,9 +18,9 @@ export function Layout213() {
           </div>
           <div className="order-1 md:order-2">
             <div className="mb-5 md:mb-6">
-              <BsFillBoxFill className="size-20 text-scheme-text" />
+              <MdOutlineHighQuality className="size-20 text-scheme-text" />
             </div>
-            <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold md:mb-6">
               Experience the Assurance of Authentic OEM Parts
             </h2>
             <p className="text-medium">
@@ -29,14 +29,15 @@ export function Layout213() {
               the reliability your vehicle deserves.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button title="Learn More" variant="secondary">
+              <Button to="/about-us" variant="secondary">
                 Learn More
               </Button>
               <Button
-                title="Send Inquiry"
+                to="/contact-us"
                 variant="link"
                 size="small"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
+                className="hover:text-secondary"
               >
                 Send Inquiry
               </Button>

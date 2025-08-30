@@ -2,15 +2,19 @@
 
 import Button from "@/components/Button";
 import { FaChevronRight } from "react-icons/fa";
-import { BsFillBoxFill } from "react-icons/bs";
+import {
+  MdOutlineInventory,
+  MdOutlineWbAuto,
+  MdOutlineWifiCalling,
+} from "react-icons/md";
 
 export function Layout238() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="mb-12 text-center md:mb-18 lg:mb-20">
           <div className="mx-auto w-full max-w-lg">
-            <h2 className="heading-h3 font-bold">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
               Discover How Our Import Process Delivers Quality Parts Directly to
               You
             </h2>
@@ -19,9 +23,9 @@ export function Layout238() {
         <div className="grid grid-cols-1 items-start justify-center gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
           <div className="flex flex-col items-center text-center">
             <div className="mb-5 md:mb-6">
-              <BsFillBoxFill className="size-12 text-scheme-text" />
+              <MdOutlineWbAuto className="size-12 text-scheme-text" />
             </div>
-            <h3 className="heading-h5 mb-5 font-bold md:mb-6">
+            <h3 className="text-lg md:text-xl lg:text-2xl mb-5 font-bold md:mb-6">
               Seamless Sourcing for Genuine Auto Parts from Trusted Global
               Partners
             </h3>
@@ -31,9 +35,11 @@ export function Layout238() {
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button
+                to="/import-process"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
                 variant="link"
                 size="small"
+                className="hover:text-secondary"
               >
                 Learn More
               </Button>
@@ -41,9 +47,9 @@ export function Layout238() {
           </div>
           <div className="flex flex-col items-center text-center">
             <div className="mb-5 md:mb-6">
-              <BsFillBoxFill className="size-12 text-scheme-text" />
+              <MdOutlineWifiCalling className="size-12 text-scheme-text" />
             </div>
-            <h3 className="heading-h5 mb-5 font-bold md:mb-6">
+            <h3 className="text-lg md:text-xl lg:text-2xl mb-5 font-bold md:mb-6">
               Your Request Initiates Our Commitment to Quality and Timeliness
             </h3>
             <p>
@@ -51,9 +57,11 @@ export function Layout238() {
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button
+                to="/contact-us"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
                 variant="link"
                 size="small"
+                className="hover:text-secondary"
               >
                 Send Inquiry
               </Button>
@@ -61,9 +69,9 @@ export function Layout238() {
           </div>
           <div className="flex flex-col items-center text-center">
             <div className="mb-5 md:mb-6">
-              <BsFillBoxFill className="size-12 text-scheme-text" />
+              <MdOutlineInventory className="size-12 text-scheme-text" />
             </div>
-            <h3 className="heading-h5 mb-5 font-bold md:mb-6">
+            <h3 className="text-lg md:text-xl lg:text-2xl mb-5 font-bold md:mb-6">
               Timely Delivery with Assurance of Authenticity and Fitment
               Accuracy
             </h3>
@@ -72,9 +80,11 @@ export function Layout238() {
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
               <Button
+                to="/contact-us"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
                 variant="link"
                 size="small"
+                className="hover:text-secondary"
               >
                 Call Now
               </Button>

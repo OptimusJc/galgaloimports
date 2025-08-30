@@ -2,11 +2,11 @@
 
 export function Layout6() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+    <section className="bg-gray-300 px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <h1 className="heading-h3 mb-5 font-bold md:mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl mb-5 font-bold md:mb-6">
               Precision Parts Matching Tailored Specifically for Your Vehicle's
               Needs
             </h1>
@@ -16,7 +16,7 @@ export function Layout6() {
             </p>
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
               <div>
-                <h6 className="heading-h6 mb-3 font-bold md:mb-4">
+                <h6 className="text-base md:text-lg lg:text-xl mb-3 font-bold md:mb-4">
                   Tailored Solutions
                 </h6>
                 <p>
@@ -25,7 +25,7 @@ export function Layout6() {
                 </p>
               </div>
               <div>
-                <h6 className="heading-h6 mb-3 font-bold md:mb-4">
+                <h6 className="text-base md:text-lg lg:text-xl mb-3 font-bold md:mb-4">
                   Expert Guidance
                 </h6>
                 <p>Our team is here to assist you every step of the way.</p>

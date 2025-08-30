@@ -16,7 +16,7 @@ export function Layout241() {
           <div className="mb-12 md:mb-18 lg:mb-20">
             <div className="w-full max-w-2xl">
               <p className="mb-3 font-semibold md:mb-4">Parts</p>
-              <h2 className="text-3xl md:text-5xl lg:text-6xl mb-5 font-bold md:mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold md:mb-6">
                 Explore Our Top Quality Auto Parts
               </h2>
               <p className="text-medium">
@@ -31,7 +31,7 @@ export function Layout241() {
               <div className="mb-5 md:mb-6">
                 <MdOutlineAutoStories className="size-12 text-scheme-text" />
               </div>
-              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
                 Engines for Every Type of Vehicle
               </h3>
               <p>
@@ -43,7 +43,7 @@ export function Layout241() {
               <div className="mb-5 md:mb-6">
                 <MdOutlinePrecisionManufacturing className="size-12 text-scheme-text" />
               </div>
-              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
                 Precision Vehicle Nose Cuts & Body Cuts
               </h3>
               <p>Our nose and body cuts guarantee a perfect fit and finish.</p>
@@ -52,7 +52,7 @@ export function Layout241() {
               <div className="mb-5 md:mb-6">
                 <MdOutlineHighQuality className="size-12 text-scheme-text" />
               </div>
-              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
                 Reliable Steering Racks for Smooth Handling
               </h3>
               <p>
