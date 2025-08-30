@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { FaChevronDown, FaHeadphones, FaUser } from "react-icons/fa";
 import { Call, LocationOn, Mail, Sms, Check } from "relume-icons";
@@ -61,18 +60,12 @@ interface SelectItemProps {
   onSelect?: (value: string) => void;
 }
 
-interface RadioGroupProps {
-  children: React.ReactNode;
-  value?: string;
-  onValueChange?: (value: string) => void;
-  className?: string;
-}
-
 interface RadioGroupItemProps {
   value: string;
   id: string;
   selectedValue?: string;
   onValueChange?: (value: string) => void;
+  children: React.ReactNode;
 }
 
 // Custom UI Components
@@ -184,11 +177,14 @@ const Select: React.FC<SelectProps> = ({
 
       {isOpen && (
         <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-gray-300 rounded-md shadow-lg z-10 max-h-60 overflow-auto">
-          {React.Children.map(children, (child) =>
-            React.cloneElement(child as React.ReactElement, {
-              onSelect: handleSelect,
-            }),
-          )}
+          {React.Children.map(children, (child) => {
+            if (React.isValidElement<SelectItemProps>(child)) {
+              return React.cloneElement(child, {
+                onSelect: handleSelect,
+              });
+            }
+            return child;
+          })}
         </div>
       )}
     </div>
@@ -209,55 +205,43 @@ const SelectItem: React.FC<SelectItemProps> = ({
   </button>
 );
 
-const RadioGroup: React.FC<RadioGroupProps> = ({
-  children,
-  value,
-  onValueChange,
-  className = "",
-}) => {
-  return (
-    <div className={className}>
-      {React.Children.map(children, (child) =>
-        React.cloneElement(child as React.ReactElement, {
-          selectedValue: value,
-          onValueChange,
-        }),
-      )}
-    </div>
-  );
-};
-
 const RadioGroupItem: React.FC<RadioGroupItemProps> = ({
   value,
   id,
   selectedValue,
   onValueChange,
+  children,
 }) => (
-  <div className="relative">
-    <input
-      type="radio"
-      id={id}
-      value={value}
-      checked={selectedValue === value}
-      onChange={() => onValueChange?.(value)}
-      className="sr-only"
-    />
-    <div
-      className={`w-4 h-4 border-2 rounded-full cursor-pointer transition-all duration-200 ${
-        selectedValue === value
-          ? "border-blue-600 bg-blue-600"
-          : "border-gray-300 bg-white hover:border-blue-400"
-      }`}
-      onClick={() => onValueChange?.(value)}
-    >
-      {selectedValue === value && (
-        <div className="w-2 h-2 bg-white rounded-full absolute top-0.5 left-0.5" />
-      )}
+  <div className="flex items-center space-x-2">
+    <div className="relative">
+      <input
+        type="radio"
+        id={id}
+        value={value}
+        checked={selectedValue === value}
+        onChange={() => onValueChange?.(value)}
+        className="sr-only"
+      />
+      <div
+        className={`w-4 h-4 border-2 rounded-full cursor-pointer transition-all duration-200 ${
+          selectedValue === value
+            ? "border-blue-600 bg-blue-600"
+            : "border-gray-300 bg-white hover:border-blue-400"
+        }`}
+        onClick={() => onValueChange?.(value)}
+      >
+        {selectedValue === value && (
+          <div className="w-2 h-2 bg-white rounded-full absolute top-0.5 left-0.5" />
+        )}
+      </div>
     </div>
+    <Label htmlFor={id} className="cursor-pointer">
+      {children}
+    </Label>
   </div>
 );
 
-export function Contact6() {
+export default function Contact6() {
   // Form state
   const [formData, setFormData] = useState({
     firstName: "",
@@ -278,13 +262,13 @@ export function Contact6() {
   // Your WhatsApp business numbers
   const whatsappNumbers = {
     sales: {
-      number: "+1234567890",
+      number: "+254768298690",
       label: "Sales Team",
       message:
         "Hi! I found your website and I'm interested in your auto parts. Can you help me with pricing and availability?",
     },
     support: {
-      number: "+0987654321",
+      number: "+254768298690",
       label: "Support Team",
       message:
         "Hi! I need technical support with auto parts. Can you assist me?",
@@ -353,21 +337,19 @@ Sent from your website contact form.`;
   ) => {
     const { name, value, type } = e.target;
     const checked = (e.target as HTMLInputElement).checked;
-
     setFormData((prev) => ({
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     startWhatsAppChat();
   };
 
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container grid grid-cols-1 items-start gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:grid-flow-col lg:gap-x-20 lg:gap-y-16">
+      <div className="container mx-auto grid grid-cols-1 items-start gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:grid-flow-col lg:gap-x-20 lg:gap-y-16">
         <div>
           <div className="mb-6 md:mb-8">
             <p className="mb-3 font-semibold md:mb-4">Get</p>
@@ -382,11 +364,15 @@ Sent from your website contact form.`;
           <div className="grid grid-cols-1 gap-4 py-2 mb-8">
             <div className="flex items-center gap-4">
               <Mail className="w-6 h-6 flex-none text-blue-600" />
-              <p>hello@relume.io</p>
+              <p>sales@galgaloimports.com</p>
             </div>
             <div className="flex items-center gap-4">
               <Call className="w-6 h-6 flex-none text-blue-600" />
-              <p>+1 (555) 123-4567</p>
+              <p className="flex flex-col gap-2 md:flex-row md:gap-3">
+                <span>+254 768 298 690</span>
+                <span className="hidden md:inline-block">|</span>
+                <span>+971 543 176 629</span>
+              </p>
             </div>
             <div className="flex items-center gap-4">
               <LocationOn className="w-6 h-6 flex-none text-blue-600" />
@@ -440,7 +426,7 @@ Sent from your website contact form.`;
           </div>
         </div>
 
-        <div className="max-w-lg">
+        <div className="max-w-xl">
           <div className="grid grid-cols-1 grid-rows-[auto_auto] gap-6">
             <div className="grid grid-cols-2 gap-6">
               <div className="grid w-full items-center">
@@ -497,9 +483,7 @@ Sent from your website contact form.`;
             </div>
 
             <div className="grid w-full items-center">
-              <Label htmlFor="topic-select" className="mb-2">
-                Select a Topic
-              </Label>
+              <Label className="mb-2">Select a Topic</Label>
               <Select
                 value={formData.topic}
                 onValueChange={(value: string) =>
@@ -518,44 +502,74 @@ Sent from your website contact form.`;
             </div>
 
             <div className="grid w-full items-center py-3 md:py-4">
-              <Label htmlFor="customer-type" className="mb-3 md:mb-4">
-                Which best describes you?
-              </Label>
-              <RadioGroup
-                value={formData.customerType}
-                onValueChange={(value: string) =>
-                  setFormData((prev) => ({ ...prev, customerType: value }))
-                }
-                className="grid grid-cols-2 gap-x-6 gap-y-3.5"
-              >
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Private Customer" id="private" />
-                  <Label htmlFor="private">Private Customer</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Business Owner" id="business" />
-                  <Label htmlFor="business">Business Owner</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Mechanic Shop" id="mechanic" />
-                  <Label htmlFor="mechanic">Mechanic Shop</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem
-                    value="Distributor Partner"
-                    id="distributor"
-                  />
-                  <Label htmlFor="distributor">Distributor Partner</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Other Inquiry" id="other-inquiry" />
-                  <Label htmlFor="other-inquiry">Other Inquiry</Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Other" id="other" />
-                  <Label htmlFor="other">Other</Label>
-                </div>
-              </RadioGroup>
+              <Label className="mb-3 md:mb-4">Which best describes you?</Label>
+              <div className="grid grid-cols-2 gap-x-6 gap-y-3.5">
+                <RadioGroupItem
+                  value="Private Customer"
+                  id="private"
+                  selectedValue={formData.customerType}
+                  onValueChange={(value: string) =>
+                    setFormData((prev) => ({ ...prev, customerType: value }))
+                  }
+                >
+                  Private Customer
+                </RadioGroupItem>
+
+                <RadioGroupItem
+                  value="Business Owner"
+                  id="business"
+                  selectedValue={formData.customerType}
+                  onValueChange={(value: string) =>
+                    setFormData((prev) => ({ ...prev, customerType: value }))
+                  }
+                >
+                  Business Owner
+                </RadioGroupItem>
+
+                <RadioGroupItem
+                  value="Mechanic Shop"
+                  id="mechanic"
+                  selectedValue={formData.customerType}
+                  onValueChange={(value: string) =>
+                    setFormData((prev) => ({ ...prev, customerType: value }))
+                  }
+                >
+                  Mechanic Shop
+                </RadioGroupItem>
+
+                <RadioGroupItem
+                  value="Distributor Partner"
+                  id="distributor"
+                  selectedValue={formData.customerType}
+                  onValueChange={(value: string) =>
+                    setFormData((prev) => ({ ...prev, customerType: value }))
+                  }
+                >
+                  Distributor Partner
+                </RadioGroupItem>
+
+                <RadioGroupItem
+                  value="Other Inquiry"
+                  id="other-inquiry"
+                  selectedValue={formData.customerType}
+                  onValueChange={(value: string) =>
+                    setFormData((prev) => ({ ...prev, customerType: value }))
+                  }
+                >
+                  Other Inquiry
+                </RadioGroupItem>
+
+                <RadioGroupItem
+                  value="Other"
+                  id="other"
+                  selectedValue={formData.customerType}
+                  onValueChange={(value: string) =>
+                    setFormData((prev) => ({ ...prev, customerType: value }))
+                  }
+                >
+                  Other
+                </RadioGroupItem>
+              </div>
             </div>
 
             <div className="grid w-full items-center">
@@ -574,9 +588,7 @@ Sent from your website contact form.`;
 
             {/* WhatsApp Team Selection */}
             <div className="grid w-full items-center">
-              <Label htmlFor="whatsapp-team" className="mb-2">
-                Send via WhatsApp to:
-              </Label>
+              <Label className="mb-2">Send via WhatsApp to:</Label>
               <div className="grid grid-cols-2 gap-4">
                 <button
                   type="button"
@@ -627,7 +639,6 @@ Sent from your website contact form.`;
             <div className="space-y-3">
               <Button
                 onClick={handleSubmit}
-                type="submit"
                 className="w-full bg-green-600 hover:bg-green-700 flex items-center justify-center gap-2"
               >
                 <Sms className="w-4 h-4" />
