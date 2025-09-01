@@ -2,10 +2,10 @@
 
 export function Header46() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
-        <div className="w-full max-w-lg">
-          <h1 className="heading-h1 mb-5 font-bold md:mb-6">
+    <section className="bg-primary text-white px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container mx-auto">
+        <div className="w-full max-w-2xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-5 font-bold md:mb-6">
             Top Quality Parts
           </h1>
           <p className="text-medium">

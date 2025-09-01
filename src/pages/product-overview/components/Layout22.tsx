@@ -2,18 +2,18 @@
 
 import Button from "@/components/Button";
 import { FaChevronRight } from "react-icons/fa";
-import { BsFillBoxFill } from "react-icons/bs";
+import { GiCargoCrane } from "react-icons/gi";
 
 export function Layout22() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <div className="mb-5 md:mb-6">
-              <BsFillBoxFill className="size-20 text-scheme-text" />
+              <GiCargoCrane className="size-20 text-scheme-text" />
             </div>
-            <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold md:mb-6">
               Precision Steering Components for Optimal Control
             </h2>
             <p className="text-medium">
@@ -23,16 +23,17 @@ export function Layout22() {
               OEM standards.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-              <Button title="Inquire" variant="secondary">
+              <Button to="/contact-us" variant="secondary">
                 Inquire
               </Button>
               <Button
-                title="Call"
+                to="/contact-us"
                 variant="link"
                 size="small"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
+                className="hover:text-secondary"
               >
-                Call
+                Call Us
               </Button>
             </div>
           </div>

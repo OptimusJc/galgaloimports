@@ -1,17 +1,18 @@
 "use client";
 
 import Button from "@/components/Button";
-import { FaChevronRight } from "react-icons/fa";
-import { BsFillBoxFill } from "react-icons/bs";
+import { FaChevronRight, FaWindowMinimize } from "react-icons/fa";
+import { PiEngineBold } from "react-icons/pi";
+import { MdVerified } from "react-icons/md";
 
 export function Layout16() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <p className="mb-3 font-semibold md:mb-4">Precision</p>
-            <h1 className="heading-h2 mb-5 font-bold md:mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold md:mb-6">
               Nose and Body Cuts for Perfect Fit
             </h1>
             <p className="text-medium mb-5 md:mb-6">
@@ -22,7 +23,7 @@ export function Layout16() {
             <ul className="grid grid-cols-1 gap-4 py-2">
               <li className="flex self-start">
                 <div className="mr-4 flex-none self-start">
-                  <BsFillBoxFill className="size-6 text-scheme-text" />
+                  <PiEngineBold className="size-6 text-scheme-text" />
                 </div>
                 <span>
                   Engineered for compatibility with various vehicle models.
@@ -30,7 +31,7 @@ export function Layout16() {
               </li>
               <li className="flex self-start">
                 <div className="mr-4 flex-none self-start">
-                  <BsFillBoxFill className="size-6 text-scheme-text" />
+                  <FaWindowMinimize className="size-6 text-scheme-text" />
                 </div>
                 <span>
                   Clean cuts ensure minimal installation time and effort.
@@ -38,7 +39,7 @@ export function Layout16() {
               </li>
               <li className="flex self-start">
                 <div className="mr-4 flex-none self-start">
-                  <BsFillBoxFill className="size-6 text-scheme-text" />
+                  <MdVerified className="size-6 text-scheme-text" />
                 </div>
                 <span>
                   Authentic parts sourced directly from trusted suppliers.
@@ -46,16 +47,17 @@ export function Layout16() {
               </li>
             </ul>
             <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-              <Button title="Inquire" variant="secondary">
+              <Button to="/contact-us" variant="secondary">
                 Inquire
               </Button>
               <Button
-                title="Call"
+                to="/contact-us"
                 variant="link"
                 size="small"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
+                className="hover:text-secondary"
               >
-                Call
+                Call Us
               </Button>
             </div>
           </div>
