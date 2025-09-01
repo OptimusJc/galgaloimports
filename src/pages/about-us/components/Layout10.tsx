@@ -2,12 +2,12 @@
 
 import Button from "@/components/Button";
 import { FaChevronRight } from "react-icons/fa";
-import { BsFillBoxFill } from "react-icons/bs";
+import { Truck, TruckElectric } from "lucide-react";
 
 export function Layout10() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <p className="mb-3 font-semibold md:mb-4">Speed</p>
@@ -22,7 +22,7 @@ export function Layout10() {
             <div className="grid grid-cols-1 gap-6 py-2 sm:grid-cols-2">
               <div>
                 <div className="mb-3 md:mb-4">
-                  <BsFillBoxFill className="size-12 text-scheme-text" />
+                  <Truck className="size-12 text-scheme-text" />
                 </div>
                 <h6 className="heading-h6 mb-3 font-bold md:mb-4">
                   Rapid Response
@@ -34,7 +34,7 @@ export function Layout10() {
               </div>
               <div>
                 <div className="mb-3 md:mb-4">
-                  <BsFillBoxFill className="size-12 text-scheme-text" />
+                  <TruckElectric className="size-12 text-scheme-text" />
                 </div>
                 <h6 className="heading-h6 mb-3 font-bold md:mb-4">
                   Timely Deliveries
@@ -54,6 +54,7 @@ export function Layout10() {
                 variant="link"
                 size="small"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
+                className="hover:text-secondary"
               >
                 Contact
               </Button>

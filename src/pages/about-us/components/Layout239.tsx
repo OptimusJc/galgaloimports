@@ -6,12 +6,12 @@ import { FaChevronRight } from "react-icons/fa";
 export function Layout239() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="flex flex-col items-center">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
-            <div className="w-full max-w-lg">
+            <div className="w-full max-w-2xl">
               <p className="mb-3 font-semibold md:mb-4">Sourcing</p>
-              <h2 className="heading-h2 mb-5 font-bold md:mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold md:mb-6">
                 Our Sourcing Process: Authenticity Guaranteed
               </h2>
               <p className="text-medium">
@@ -31,7 +31,7 @@ export function Layout239() {
                   className="rounded-image"
                 />
               </div>
-              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
                 No Middlemen, No Compromises
               </h3>
               <p>
@@ -47,7 +47,7 @@ export function Layout239() {
                   className="rounded-image"
                 />
               </div>
-              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
                 Verified Partners for Quality Assurance
               </h3>
               <p>
@@ -63,7 +63,7 @@ export function Layout239() {
                   className="rounded-image"
                 />
               </div>
-              <h3 className="heading-h4 mb-5 font-bold md:mb-6">
+              <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
                 Say Goodbye to Local Knockoffs
               </h3>
               <p>
@@ -72,11 +72,12 @@ export function Layout239() {
             </div>
           </div>
           <div className="mt-6 flex flex-wrap items-center gap-4 md:mt-8">
-            <Button variant="secondary">Inquire</Button>
             <Button
+              to="/contact-us"
               rightIcon={<FaChevronRight className="text-scheme-text" />}
               variant="link"
               size="small"
+              className="hover:text-secondary"
             >
               Learn More
             </Button>

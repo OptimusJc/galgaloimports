@@ -5,8 +5,8 @@ import Button from "@/components/Button";
 export function Cta3() {
   return (
     <section className="relative px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="relative z-10 container">
-        <div className="w-full max-w-lg">
+      <div className="relative z-10 container mx-auto">
+        <div className="w-full max-w-xl">
           <h2 className="heading-h2 mb-5 font-bold text-white md:mb-6">
             Discover Our Sourcing Process
           </h2>
@@ -15,8 +15,17 @@ export function Cta3() {
             today!
           </p>
           <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-            <Button title="Learn More">Learn More</Button>
-            <Button title="Contact Us" variant="secondary-alt">
+            <Button
+              to="/import-process"
+              className="hover:bg-white hover:text-secondary"
+            >
+              Learn More
+            </Button>
+            <Button
+              to="/contact-us"
+              variant="secondary-alt"
+              className="hover:bg-primary hover:text-white"
+            >
               Contact Us
             </Button>
           </div>

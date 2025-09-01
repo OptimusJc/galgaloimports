@@ -2,11 +2,11 @@
 
 export function Layout3() {
   return (
-    <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+    <section className="bg-primary-light text-white px-[5%] py-16 md:py-24 lg:py-28">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
-            <h1 className="heading-h3 mb-5 font-bold md:mb-6">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl mb-5 font-bold md:mb-6">
               Building Trust Through Genuine Sourcing and Reliable Deliveries
             </h1>
             <p className="text-medium">
