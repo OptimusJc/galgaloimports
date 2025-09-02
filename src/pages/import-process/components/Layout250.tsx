@@ -6,10 +6,10 @@ import { FaChevronRight } from "react-icons/fa";
 export function Layout250() {
   return (
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="mb-12 md:mb-18 lg:mb-20">
           <div className="max-w-lg">
-            <h2 className="heading-h3 font-bold">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
               Seamless Shipping and Delivery: Your Parts, Right When You Need
               Them
             </h2>
@@ -24,7 +24,7 @@ export function Layout250() {
                 className="rounded-image"
               />
             </div>
-            <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+            <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
               Fast and Reliable Delivery for Your Imported Auto Parts
             </h3>
             <p>
@@ -33,9 +33,11 @@ export function Layout250() {
             </p>
             <div className="mt-6 flex gap-4 md:mt-8">
               <Button
+                to="/product-overview"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
                 variant="link"
                 size="small"
+                className="hover:text-secondary"
               >
                 Learn More
               </Button>
@@ -49,7 +51,7 @@ export function Layout250() {
                 className="rounded-image"
               />
             </div>
-            <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+            <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
               Timely Delivery with Quality Assurance for Every Order
             </h3>
             <p>
@@ -58,9 +60,11 @@ export function Layout250() {
             </p>
             <div className="mt-6 flex gap-4 md:mt-8">
               <Button
+                to="/contact-us"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
                 variant="link"
                 size="small"
+                className="hover:text-secondary"
               >
                 Call Now
               </Button>
@@ -74,7 +78,7 @@ export function Layout250() {
                 className="rounded-image"
               />
             </div>
-            <h3 className="heading-h5 mb-3 font-bold md:mb-4">
+            <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
               Your Satisfaction is Our Priority: Trust in Our Delivery Process
             </h3>
             <p>
@@ -83,9 +87,11 @@ export function Layout250() {
             </p>
             <div className="mt-6 flex gap-4 md:mt-8">
               <Button
+                to="/contact-us"
                 rightIcon={<FaChevronRight className="text-scheme-text" />}
                 variant="link"
                 size="small"
+                className="hover:text-secondary"
               >
                 Request
               </Button>
