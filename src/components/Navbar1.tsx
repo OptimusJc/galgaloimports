@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { KeyboardArrowDown } from "relume-icons";
 import { useMediaQuery } from "@relume_io/relume-ui";
+import { Link } from "react-router-dom";
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,13 +45,13 @@ export function Navbar1() {
     <section className="z-[999] flex w-full items-center border-b border-scheme-border bg-primary lg:min-h-18 lg:px-[5%]">
       <div className="size-full lg:flex lg:items-center lg:justify-between">
         <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
-          <a href="/">
+          <Link to="/">
             <img
               src="/logo.png"
               alt="Logo image"
               className="w-20 md:w-24 my-2"
             />
-          </a>
+          </Link>
           <button
             className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
             onClick={useActive.toggleMobileMenu}
@@ -105,25 +106,25 @@ export function Navbar1() {
           transition={{ duration: 0.4 }}
           className="overflow-hidden px-[5%] flex flex-col lg:flex-row lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
         >
-          <a
-            href="/"
+          <Link
+            to="/"
             className="px-6 py-3 text-gray-100 font-medium transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="/product-overview"
+          <Link
+            to="/product-overview"
             className="px-6 py-3 text-gray-100 font-medium transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
           >
             Products
-          </a>
-          <a
-            href="/about-us"
+          </Link>
+          <Link
+            to="/about-us"
             className="px-6 py-3 text-gray-100 font-medium transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:text-secondary"
           >
             About Us
-          </a>
+          </Link>
           <div
             onMouseEnter={useActive.openOnDesktopDropdownMenu}
             onMouseLeave={useActive.closeOnDesktopDropdownMenu}
@@ -163,24 +164,24 @@ export function Navbar1() {
                 transition={{ duration: 0.2 }}
                 className="bg-scheme-background bg-primary flex-col lg:absolute lg:z-50 lg:border lg:border-scheme-border lg:p-2 lg:[--y-close:25%]"
               >
-                <a
-                  href="/contact-us"
+                <Link
+                  to="/contact-us"
                   className="pl-[10%] lg:px-4 py-2 font-medium text-base text-gray-100 transition-all duration-300 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(199,0,57,0.8)]"
                 >
                   Contact Us
-                </a>
-                <a
-                  href="/import-process"
+                </Link>
+                <Link
+                  to="/import-process"
                   className="pl-[10%] lg:px-4 py-2 font-medium text-base text-gray-100 transition-all duration-300 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(199,0,57,0.8)]"
                 >
                   Import Process
-                </a>
-                <a
-                  href="/faq"
+                </Link>
+                <Link
+                  to="/faq"
                   className="pl-[10%] lg:px-4 py-2 font-medium text-base text-gray-100 transition-all duration-300 hover:text-secondary hover:drop-shadow-[0_0_8px_rgba(199,0,57,0.8)]"
                 >
                   FAQ
-                </a>
+                </Link>
               </motion.nav>
             </AnimatePresence>
           </div>
