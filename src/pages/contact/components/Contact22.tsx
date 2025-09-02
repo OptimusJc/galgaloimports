@@ -82,7 +82,7 @@ export function Contact22() {
               className="underline hover:text-blue-500 transition-colors duration-300"
               href="tel:+254768298690"
             >
-              +254 768 298 690
+              +971 543 176 629
             </a>
           </div>
 
