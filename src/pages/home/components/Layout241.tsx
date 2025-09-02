@@ -10,7 +10,7 @@ import {
 
 export function Layout241() {
   return (
-    <section className="bg-primary text-white px-[5%] py-16 md:py-24 lg:py-28">
+    <section className="bg-primary-light text-white px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container mx-auto">
         <div className="flex flex-col">
           <div className="mb-12 md:mb-18 lg:mb-20">
