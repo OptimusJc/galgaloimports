@@ -11,7 +11,7 @@ export function Layout10() {
         <div className="grid grid-cols-1 gap-y-12 md:grid-flow-row md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div>
             <p className="mb-3 font-semibold md:mb-4">Speed</p>
-            <h1 className="heading-h2 mb-5 font-bold md:mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold md:mb-6">
               Efficiency in Sourcing and Delivery of Parts
             </h1>
             <p className="text-medium mb-6 md:mb-8">
@@ -24,7 +24,7 @@ export function Layout10() {
                 <div className="mb-3 md:mb-4">
                   <Truck className="size-12 text-scheme-text" />
                 </div>
-                <h6 className="heading-h6 mb-3 font-bold md:mb-4">
+                <h6 className="text-base md:text-lg lg:text-xl mb-3 font-bold md:mb-4">
                   Rapid Response
                 </h6>
                 <p>
@@ -36,7 +36,7 @@ export function Layout10() {
                 <div className="mb-3 md:mb-4">
                   <TruckElectric className="size-12 text-scheme-text" />
                 </div>
-                <h6 className="heading-h6 mb-3 font-bold md:mb-4">
+                <h6 className="text-base md:text-lg lg:text-xl mb-3 font-bold md:mb-4">
                   Timely Deliveries
                 </h6>
                 <p>
