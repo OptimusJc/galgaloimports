@@ -98,11 +98,11 @@ export function Contact22() {
             </p>
             <a
               className="underline hover:text-purple-500 transition-colors duration-300"
-              href="https://maps.google.com/?q=123+Sample+St,+Sydney+NSW+2000+AU"
+              href="https://maps.app.goo.gl/imQkkDxa8CCazjca6"
               target="_blank"
               rel="noopener noreferrer"
             >
-              123 Sample St, Sydney NSW 2000 AU
+              Buserah Auto Garage, Along Nile Rd, Nairobi, Kenya.
             </a>
           </div>
         </div>
