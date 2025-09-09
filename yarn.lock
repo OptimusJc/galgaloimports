@@ -4462,6 +4462,11 @@ validate-npm-package-name@^6.0.0, validate-npm-package-name@^6.0.2:
   resolved "https://registry.yarnpkg.com/validate-npm-package-name/-/validate-npm-package-name-6.0.2.tgz#4e8d2c4d939975a73dd1b7a65e8f08d44c85df96"
   integrity sha512-IUoow1YUtvoBBC06dXs8bR8B9vuA3aJfmQNKMoaPG/OFsPmoQvw8xh+6Ye25Gx9DQhoEom3Pcu9MKHerm/NpUQ==
 
+vite-plugin-sitemap@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-sitemap/-/vite-plugin-sitemap-0.8.2.tgz#4121168d331df1054bc4b2cff9de8f21cc0bd7af"
+  integrity sha512-bqIw6NVOXg6je81lzX8Lm0vjf8/QSAp8di8fYQzZ3ZdVicOm8+6idBGALJiy1R1FiXNIK8rgORO6HBqXyHW+iQ==
+
 vite@^7.0.4:
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/vite/-/vite-7.0.6.tgz#7866ccb176db4bbeec0adfb3f907f077881591d0"
