@@ -11,7 +11,7 @@ export function Header5() {
             <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-5 font-bold text-white md:mb-6">
               Imported Auto Parts You Can Trust
             </h1>
-            <p className="font-medium text-white">
+            <p className="font-normal text-white">
               Discover high-quality auto parts sourced directly from global
               markets. Experience authentic OEM quality with no middlemen
               involved.
