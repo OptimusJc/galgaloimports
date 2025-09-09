@@ -21,11 +21,11 @@ export function Layout24() {
               deliver exactly what you need, when you need it.
             </p>
           </div>
-          <div>
+          <div className="overflow-hidden">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+              src="/home/quality_brands_2.jpg"
+              className="w-full h-auto max-h-[600px] rounded-image object-cover md:object-center"
+              alt="Quality vehicle auto parts"
             />
           </div>
         </div>
