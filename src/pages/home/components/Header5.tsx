@@ -11,17 +11,25 @@ export function Header5() {
             <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl mb-5 font-bold text-white md:mb-6">
               Imported Auto Parts You Can Trust
             </h1>
-            <p className="text-medium text-white">
+            <p className="font-normal text-white">
               Discover high-quality auto parts sourced directly from global
               markets. Experience authentic OEM quality with no middlemen
               involved.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
-              <Button variant="secondary" to="/about-us" className="">
-                Request
-              </Button>
-              <Button variant="secondary-alt" to="/contact-us">
+              <Button
+                variant="secondary"
+                to="/contact-us"
+                className="hover:bg-secondary hover:text-secondary"
+              >
                 Inquire
+              </Button>
+              <Button
+                variant="secondary-alt"
+                to="/about-us"
+                className="hover:border-secondary hover:text-secondary"
+              >
+                About Us
               </Button>
             </div>
           </div>
@@ -29,11 +37,11 @@ export function Header5() {
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src="/home/engines_and_nose_cuts.jpg"
           className="size-full object-cover"
-          alt="Relume placeholder image"
+          alt="Quality vehicle engines and body cuts"
         />
-        <div className="absolute inset-0 bg-neutral-darkest/50" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
     </section>
   );

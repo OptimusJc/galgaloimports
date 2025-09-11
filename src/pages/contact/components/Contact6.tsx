@@ -376,7 +376,7 @@ Sent from your website contact form.`;
             </div>
             <div className="flex items-center gap-4">
               <LocationOn className="w-6 h-6 flex-none text-blue-600" />
-              <p>456 Auto Lane, Los Angeles CA 90001 US</p>
+              <p>Buserah Auto Garage, Along Nile Rd, Nairobi, Kenya.</p>
             </div>
           </div>
 

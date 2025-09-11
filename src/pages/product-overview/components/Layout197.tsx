@@ -5,11 +5,11 @@ export function Layout197() {
     <section className="px-[5%] py-16 md:py-24 lg:py-28">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1 overflow-hidden">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+              src="/home/reliable_engines_3.jpeg"
+              className="w-full h-auto max-h-[600px] rounded-image object-cover md:object-center"
+              alt="Original Engines"
             />
           </div>
           <div className="order-1 md:order-2">

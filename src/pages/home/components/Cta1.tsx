@@ -27,10 +27,10 @@ export function Cta1() {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="overflow-hidden">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-              className="w-full rounded-image object-cover"
+              src="/home/reliable_engines.jpeg"
+              className="w-full h-auto max-h-[400px] rounded-image object-cover object-top md:object-center md:object-top"
               alt="Relume placeholder image"
             />
           </div>
