@@ -16,11 +16,11 @@ export function Layout3() {
               purchase.
             </p>
           </div>
-          <div>
+          <div className="overflow-hidden">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+              src="/about/oem_nose_cuts.jpeg"
+              className="w-full h-auto max-h-[600px] rounded-image object-cover md:object-center"
+              alt="OEM Nose Cuts"
             />
           </div>
         </div>

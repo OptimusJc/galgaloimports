@@ -24,11 +24,11 @@ export function Layout239() {
           </div>
           <div className="grid grid-cols-1 items-start justify-center gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
             <div className="flex w-full flex-col items-center text-center">
-              <div className="mb-6 md:mb-8">
+              <div className="mb-6 md:mb-8 overflow-hidden">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image"
-                  className="rounded-image"
+                  src="/about/quality_oem_steering_components.jpeg"
+                  alt="Quality OEM Steering Vehicle Parts"
+                  className="rounded-image aspect-video w-full h-auto object-cover object-center"
                 />
               </div>
               <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
@@ -40,11 +40,11 @@ export function Layout239() {
               </p>
             </div>
             <div className="flex w-full flex-col items-center text-center">
-              <div className="mb-6 md:mb-8">
+              <div className="mb-6 md:mb-8 overflow-hidden">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image"
-                  className="rounded-image"
+                  src="/about/verified_quality_oem_parts.jpeg"
+                  alt="Verified Quality OEM Parts"
+                  className="rounded-image w-full h-auto max-h-[300px] aspect-video object-cover object-center"
                 />
               </div>
               <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">
@@ -56,11 +56,11 @@ export function Layout239() {
               </p>
             </div>
             <div className="flex w-full flex-col items-center text-center">
-              <div className="mb-6 md:mb-8">
+              <div className="mb-6 md:mb-8 overflow-hidden">
                 <img
-                  src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                  alt="Relume placeholder image"
-                  className="rounded-image"
+                  src="/about/garanteed_oem_parts.jpeg"
+                  alt="Garanteed OEM Car Parts"
+                  className="rounded-image w-full h-auto max-h-[300px] aspect-video object-cover object-center"
                 />
               </div>
               <h3 className="text-xl md:text-2xl lg:text-3xl mb-5 font-bold md:mb-6">

@@ -7,7 +7,7 @@ export function Cta3() {
     <section className="relative px-[5%] py-16 md:py-24 lg:py-28">
       <div className="relative z-10 container mx-auto">
         <div className="w-full max-w-xl">
-          <h2 className="heading-h2 mb-5 font-bold text-white md:mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 font-bold text-white md:mb-6">
             Discover Our Sourcing Process
           </h2>
           <p className="text-medium text-white">
@@ -33,11 +33,11 @@ export function Cta3() {
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src="/about/sourcing_process.jpeg"
           className="size-full object-cover"
-          alt="Relume placeholder image"
+          alt="Genuine OEM Lights and Nose Cut"
         />
-        <div className="absolute inset-0 bg-neutral-darkest/50" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
     </section>
   );

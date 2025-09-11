@@ -60,11 +60,11 @@ export function Layout10() {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="overflow-hidden">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+              src="/about/fast_deliveries.jpg"
+              className="w-full h-auto max-h-[600px] rounded-image object-cover md:object-center"
+              alt="Fast Shipping Deliveries"
             />
           </div>
         </div>
