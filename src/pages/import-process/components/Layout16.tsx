@@ -56,11 +56,11 @@ export function Layout16() {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="overflow-hidden">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
-              className="w-full rounded-image object-cover"
-              alt="Relume placeholder image"
+              src="/imports/genuine_half_cuts.jpeg"
+              alt="Genuine Car Half Cuts"
+              className="w-full object-cover h-60 lg:h-[500px]"
             />
           </div>
         </div>

@@ -16,9 +16,9 @@ export function Layout240() {
           <div className="flex w-full flex-col items-center text-center">
             <div className="mb-6 md:mb-8">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
-                className="rounded-image"
+                src="/imports/20ft-mix-cont.jpeg"
+                alt="Engines Transmissions Nose Cuts"
+                className="rounded-image w-full object-fit h-auto max-h-[300px] aspect-video"
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
@@ -43,9 +43,9 @@ export function Layout240() {
           <div className="flex w-full flex-col items-center text-center">
             <div className="mb-6 md:mb-8">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
-                className="rounded-image"
+                src="/imports/fv-slide-01.jpeg"
+                alt="Genuine OEM Parts"
+                className="rounded-image object-fit w-full h-auto max-h-[300px] aspect-video"
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
@@ -70,9 +70,9 @@ export function Layout240() {
           <div className="flex w-full flex-col items-center text-center">
             <div className="mb-6 md:mb-8">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
-                className="rounded-image"
+                src="/imports/quality_engines.jpg"
+                alt="Quality Engines"
+                className="rounded-image object-fit w-full h-auto max-h-[300px] aspect-video"
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">

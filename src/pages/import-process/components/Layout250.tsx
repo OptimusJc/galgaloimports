@@ -17,11 +17,11 @@ export function Layout250() {
         </div>
         <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
           <div className="flex flex-col">
-            <div className="mb-6 md:mb-8">
+            <div className="mb-6 md:mb-8 overflow-hidden">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
-                className="rounded-image"
+                src="/imports/reliable_imports.jpg"
+                alt="Reliable Imports"
+                className="rounded-image w-full h-auto aspect-video"
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
@@ -46,9 +46,9 @@ export function Layout250() {
           <div className="flex flex-col">
             <div className="mb-6 md:mb-8">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
-                className="rounded-image"
+                src="/imports/quality_assurance.jpg"
+                alt="Quality Assurance"
+                className="rounded-image w-full h-auto aspect-video"
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">
@@ -73,9 +73,9 @@ export function Layout250() {
           <div className="flex flex-col">
             <div className="mb-6 md:mb-8">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
-                className="rounded-image"
+                src="/imports/20ft-mix-img.jpeg"
+                alt="Trusted OEM Parts"
+                className="rounded-image w-full h-auto aspect-video"
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl mb-3 font-bold md:mb-4">

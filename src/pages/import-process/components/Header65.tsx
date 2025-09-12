@@ -33,11 +33,11 @@ export function Header65() {
       </div>
       <div className="absolute inset-0 z-0">
         <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+          src="/imports/hero_imports.jpg"
           className="size-full object-cover"
           alt="Relume placeholder image"
         />
-        <div className="absolute inset-0 bg-neutral-darkest/50" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
     </section>
   );
