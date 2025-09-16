@@ -4,7 +4,7 @@ import { Call, LocationOn, Mail, Sms } from "relume-icons";
 
 export function Contact22() {
   // Your WhatsApp business number (replace with your actual number)
-  const whatsappNumber = "+254768298690"; // Format: +countrycode+number
+  const whatsappNumber = "+971543176629"; // Format: +countrycode+number
 
   // Function to detect mobile device
   const isMobileDevice = () => {
