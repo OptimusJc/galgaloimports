@@ -262,7 +262,7 @@ export default function Contact6() {
   // Your WhatsApp business numbers
   const whatsappNumbers = {
     sales: {
-      number: "+254768298690",
+      number: "+971543176629",
       label: "Sales Team",
       message:
         "Hi! I found your website and I'm interested in your auto parts. Can you help me with pricing and availability?",
