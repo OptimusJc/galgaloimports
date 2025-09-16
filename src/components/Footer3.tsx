@@ -21,21 +21,21 @@ export function Footer3() {
             <div className="mb-6 md:mb-8">
               <p className="text-small mb-1 font-semibold">Address:</p>
               <p className="text-small mb-5 md:mb-6">
-                Level 1, 12 Sample St, Sydney NSW 2000
+                Buserah Auto Garage, Along Nile Rd, Nairobi, Kenya.
               </p>
               <p className="text-small mb-1 font-semibold">Contact:</p>
               <div className="flex flex-col md:gap-2 md:flex-row">
-                <Link
-                  to="tel:+254768298690"
-                  className="text-small block underline"
-                >
-                  +254 768 298 690
-                </Link>
                 <Link
                   to="tel:+971543176629"
                   className="text-small block underline"
                 >
                   +971 543 176 629
+                </Link>
+                <Link
+                  to="tel:+254768298690"
+                  className="text-small block underline"
+                >
+                  +254 768 298 690
                 </Link>
               </div>
               <Link
