@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "react-router-dom";
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from "relume-icons";
+import { FacebookLogo, InstagramLogo } from "relume-icons";
 import { SiTiktok } from "react-icons/si";
 
 export function Footer3() {
