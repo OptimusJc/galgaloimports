@@ -38,11 +38,18 @@ export function Layout89() {
             </div>
           </div>
         </div>
-        <img
-          src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-          className="w-full rounded-image object-cover"
-          alt="Relume placeholder image"
-        />
+        <div className="w-full max-w-5xl mx-auto">
+          <video
+            controls
+            muted
+            preload="none"
+            poster="/videos/thumbnail.jpg"
+            className="w-full h-auto aspect-video object-fit bg-black rounded-lg shadow-lg"
+          >
+            <source src="/videos/final_output.mp4" type="video/mp4" />
+            Your browser doesn't support this video format
+          </video>
+        </div>
       </div>
     </section>
   );
